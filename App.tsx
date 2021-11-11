@@ -37,9 +37,17 @@ export default function App() {
           </View>
         </View>
 
-        <Card />
+        <Card titulo='Formação Acadêmica'>
+          <Text style={style.card_content_text}>IFG</Text>
+          <Text style={style.card_content_text}>SENAI</Text>
+          <Text style={style.card_content_text}>Alura</Text>
+        </Card>
         
-        <Card />
+        <Card titulo='Experiência Profissional' >
+        <Text style={style.card_content_text}>XYZ</Text>
+          <Text style={style.card_content_text}>123</Text>
+          <Text style={style.card_content_text}>abc</Text>
+        </Card>
 
       </View>
     </>
@@ -76,5 +84,9 @@ const style = StyleSheet.create({
     alignItems: 'center',
     width: '60%',
     marginTop: 20
+  },
+  card_content_text: {
+    color: '#939393',
+    marginBottom: 10
   }
 });

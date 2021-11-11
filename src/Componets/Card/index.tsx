@@ -1,20 +1,22 @@
 import { View, Text } from "react-native"
-import React from "react"
+import React, { ReactChild } from "react"
 import style from './style'
+interface ICard {
+  titulo: string,
+  children: React.ReactNode
+}
 
-export default function Card () {
+export default function Card ({titulo, children}: ICard) {
   return (
     <View style={style.card_container} >
 
       <View style={style.card}>
         <View style={style.card_header}>
-          <Text>Formação Acadêmca</Text>
+          <Text>{titulo}</Text>
         </View>
 
         <View style={style.card_content}>
-          <Text style={style.card_content_text}>IFG</Text>
-          <Text style={style.card_content_text}>SENAI</Text>
-          <Text style={style.card_content_text}>Alura</Text>
+          {children}
         </View>
       </View>
 

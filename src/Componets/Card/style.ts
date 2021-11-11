@@ -23,10 +23,6 @@ const style = StyleSheet.create({
   },
   card_header: {
 
-  },
-  card_content_text: {
-    color: '#939393',
-    marginBottom: 10
   }
 })
 
